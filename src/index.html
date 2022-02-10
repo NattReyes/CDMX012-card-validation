@@ -4,11 +4,58 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="logoKalanchoe.png" type="image/x-icon">
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <!-- Título, logo y menú de navegación -->
+    <header>
+      <nav>
+      <h1> KALACHOE SAUTY</h1>
+      <img src="logoKalanchoe.png" >
+      <ul>
+        <li><a href="https://www.facebook.com/Kalanchoe-Sauty-110317947352681/?ref=page_internal">Home</a></li>
+        <li><a href="https://www.facebook.com/Kalanchoe-Sauty-110317947352681/photos/?ref=page_internal">Nuestros productos</a></li>
+        <li><a href="https://www.facebook.com/messages/t/110317947352681">Contáctanos</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+      <div class="container">
+        <!-- Contenedor 1:Ingresar los datos de la tarjeta -->
+     <div class="insertData">
+       <div class="aligText">
+        <h2> Tarjeta de crédito/débito</h2>
+        <p1> Nombre:</p1>
+     <div >
+      <form action>
+     <input type="text" id="name" >
+    </form>
+      </div>        
+        <p2>Número de tarjeta:</p2>
+    <div >
+      <form action>
+     <input type="text" id="inputNumber" onkeypress="return event.charCode>=48&&event.charCode<=57" required
+      maxlength="16" minlength="16" placeholder="16 dígitos">
+    </form>
+      </div>
+    <div>
+    <input id="submit" type="submit" value="Enviar" >
+      </div>
+      <div>
+        <input id="reload" type="submit" value="Validar otra tarjeta" ><br>
+          </div>
+    <br>
+    <p3 id="validAlert"> </p3>
+  </div>
+     </div>
+      <!-- Contenedor 2:Imagen de la tarjeta -->
+    <div class="cardContainer">
+      <img class="card" src="tarjetaKalanchoe.png">
+      </div>
+</div>
+</main>
+  <!-- Pie de página-->
+    <footer>Copyright © 2022 Natalia Reyes</footer>
     <script src="index.js" type="module"></script>
   </body>
-</html>
+  </html>
